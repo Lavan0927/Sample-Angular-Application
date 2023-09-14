@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Update Student</h2>
+    <form (submit)="updateStudent()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="student.fname" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="student.lname" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" [(ngModel)]="student.age" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="student.email" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+  

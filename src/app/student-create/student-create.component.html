@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Create Student</h2>
+    <form (submit)="createStudent()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="newStudent.fname" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="newStudent.lname" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" [(ngModel)]="newStudent.age" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" [(ngModel)]="newStudent.email" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+  
